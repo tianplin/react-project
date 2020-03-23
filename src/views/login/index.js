@@ -42,21 +42,22 @@ class Login extends React.Component{
             message.error("请输入密码")
             return
         }
-
         const hide = message.loading('正在登录中。。。', 0);
-
         // Dismiss manually and asynchronously
         setTimeout(hide, 2500);
-        
         setTimeout(()=>{
-            message.success('登录成功！');
+             message.success('登录成功！');
              this.props.history.push("home")
         },2600)
-        //路径跳转
-       
+        //路径跳转     
     }
-
+    //组件加载
+    componentDidMount(){
+       //
+       console.log("组件加载")
+    }
     render(){
+    
     return (
         <div className="login" style={this.state.backgroundStyle}>
             <div className="form">
