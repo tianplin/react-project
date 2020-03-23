@@ -1,10 +1,11 @@
 
 import React from 'react';
-class Home extends React.Component{
+
+class Head extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            
+
         }
 
     }
@@ -17,11 +18,11 @@ class Home extends React.Component{
 
     render(){
         return (
-             <div>
-
+             <div className="menu">
+               顶部位置
              </div>
           );
 }
 }
 
-export default Home
+export default Head
