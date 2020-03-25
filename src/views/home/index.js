@@ -9,28 +9,27 @@ class Home extends React.Component{
     constructor(props){
         super(props)
         this.state={
-
         }
 
     }
     handleClick = e => {
         console.log('click ', e);
       }
-
-
     //提交
     submit(){
-
+    
     }
 
     render(){
         return (
               <div className="home">
                    <Appbar title={"菜单"}/>
-                  <Head/>
-
+                     <div className="content-wrap">
+                    
+                     <Head/>
+                   </div>
              </div>
-
+             
           );
 }
 }

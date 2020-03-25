@@ -29,7 +29,7 @@ class Appbar extends React.Component{
     render(){
       return (
         <div className="appbar">
-        <div className="appbarName">xxx后台管理系统</div>
+        <div className="appbarName">后台管理系统</div>
        <Menu
          style={{ width: 256 }}
         //  defaultSelectedKeys={['0']}
@@ -38,7 +38,7 @@ class Appbar extends React.Component{
          >
 
          <Menu.Item key="0">
-          <AppstoreOutlined/>
+           <AppstoreOutlined/>
           首页
           </Menu.Item>
 
@@ -56,8 +56,10 @@ class Appbar extends React.Component{
             </span>
           }
         >
-        <Menu.Item key="1">表格</Menu.Item>
-        <Menu.Item key="2">表单</Menu.Item>
+        [
+          <Menu.Item key="1">表格</Menu.Item>,
+          <Menu.Item key="2">表单</Menu.Item>
+        ]
         </SubMenu>
 
          </Menu>

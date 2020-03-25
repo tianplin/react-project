@@ -7,7 +7,6 @@ class Head extends React.Component{
         this.state={
 
         }
-
     }
 
 
@@ -18,7 +17,7 @@ class Head extends React.Component{
 
     render(){
         return (
-             <div className="menu">
+             <div className="head">
                顶部位置
              </div>
           );
